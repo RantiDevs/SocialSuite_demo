@@ -125,7 +125,7 @@ export default function PurchaseCrypto() {
     });
   };
 
-  const priceUsd = config?.nowpayments?.priceUsd || 15.50;
+  const priceUsd = config?.nowpayments?.priceUsd || 79.00;
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 flex items-center justify-center p-6">
@@ -140,7 +140,7 @@ export default function PurchaseCrypto() {
               Purchase your license using Bitcoin, Ethereum, or other cryptocurrencies
             </CardDescription>
           </CardHeader>
-          
+
           <CardContent className="space-y-6">
             <div className="bg-muted/50 rounded-lg p-6 space-y-4">
               <h3 className="font-semibold text-lg">Crypto Payment Benefits:</h3>
@@ -188,7 +188,7 @@ export default function PurchaseCrypto() {
                   <p className="text-sm text-muted-foreground mb-6">
                     Select your preferred cryptocurrency to pay:
                   </p>
-                  
+
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
                     <Button
                       variant="outline"
@@ -223,7 +223,7 @@ export default function PurchaseCrypto() {
                       LTC
                     </Button>
                   </div>
-                  
+
                   <p className="text-xs text-muted-foreground mt-6">
                     Powered by NowPayments - Accepts 300+ cryptocurrencies
                   </p>
@@ -239,7 +239,7 @@ export default function PurchaseCrypto() {
                     </span>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    {statusData?.payment_status === "finished" 
+                    {statusData?.payment_status === "finished"
                       ? "Your payment has been confirmed and license generated. You are being redirected..."
                       : `Send the exact amount below to complete your payment. Your license key will be emailed to ${user?.email} after confirmation.`}
                   </p>
@@ -302,8 +302,8 @@ export default function PurchaseCrypto() {
                           </Button>
                         </div>
                       </div>
-                      <Button 
-                        className="w-full bg-green-600 hover:bg-green-700" 
+                      <Button
+                        className="w-full bg-green-600 hover:bg-green-700"
                         onClick={() => setLocation("/activate")}
                       >
                         <i className="fas fa-key mr-2"></i>
